@@ -1,0 +1,29 @@
+<div class="example-container">
+  <form (ngSubmit)="insereUsuario()">
+    <mat-form-field appearance="fill">
+      <mat-label>Entre com seu nome</mat-label>
+      <input matInput placeholder="Ricardo" [formControl]="nome" required />
+      <mat-error *ngIf="nome.invalid">{{ getErrorMessage() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Entre com seu email</mat-label>
+      <input matInput
+             placeholder="pat@example.com"
+             [formControl]="email"
+             required />
+      <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Entre com seu CPF</mat-label>
+      <input matInput
+             placeholder="123.456.789-02"
+             [formControl]="cpf"
+             required />
+      <mat-error *ngIf="cpf.invalid">{{ getErrorMessage() }}</mat-error>
+    </mat-form-field>
+    <button mat-button>Salvar!!</button>
+  </form>
+  <button mat-button routerLink="/usuarios">Voltar p/ home</button>
+</div>
