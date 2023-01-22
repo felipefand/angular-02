@@ -21,12 +21,15 @@ const routes: Routes = [
   {
     path: "home",
     component: HomeComponent,
-    canActivate: [AuthService]
+    canActivate: [AuthService],
+    children: [
+      {
+        path: "usuarios",
+        component: UsuariosComponent
+      }
+    ]
   },
-  {
-    path: "usuarios",
-    component: UsuariosComponent
-  },
+
   {
     path: "usuario/novo",
     component: InserirUsuarioComponent
