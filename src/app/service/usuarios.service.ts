@@ -10,12 +10,14 @@ export class UsuariosService {
     id: 1,
     nome: "Dagoberto",
     email: "dagoberto@gmail.com",
-    cpf: "1"
+    cpf: "1",
+    senha: "123456"
   }).add({
     id: 2,
     nome: "Anguloso",
     email: "anguloso@gmail.com",
-    cpf: "2"
+    cpf: "2",
+    senha: "123456"
   });
 
   constructor() { }

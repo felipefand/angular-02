@@ -13,6 +13,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { InserirUsuarioComponent } from './pages/inserir-usuario/inserir-usuario.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { LoginComponent } from './pages/login/login.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     PageNotFoundComponent,
     UsuariosComponent,
     UsuarioDetalhesComponent,
-    InserirUsuarioComponent
+    InserirUsuarioComponent,
+    LoginComponent,
+    CadastroComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
